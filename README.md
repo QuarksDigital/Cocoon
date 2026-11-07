@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cocoon - website
 
-## Getting Started
+Next.js 16 (App Router) + Three.js + GSAP ScrollTrigger + Lenis on the front, Express 5 + MongoDB Atlas behind it.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm --prefix server install
+cp server/.env.example server/.env   # add your Atlas MONGODB_URI
+npm run seed                         # loads data/products.json into Atlas (once)
+npm run dev:all                      # web on :3000, api on :5000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next proxies `/api/*` to the Express server (`API_URL`, default `http://localhost:5000`), so the browser never needs CORS in dev. In production, set `API_URL` on the Next host and `CORS_ORIGIN` on the API host.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Without a `MONGODB_URI`, the API still serves the bundled catalogue. The enquiry form returns a friendly "call us" message instead of saving.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Where things live
 
-## Learn More
+| Path | What |
+| --- | --- |
+| `components/hero/scene/DrainScene.ts` | The 3D hero: room, LED glow, drain, water physics, camera dive |
+| `components/hero/scene/geometry.ts` | Procedural wave-cut grate, frame, puddles, leaves |
+| `components/hero/scene/textures.ts` | Procedural tile, brushed steel, marble, glow textures |
+| `components/hero/Hero.tsx` | Scroll timeline that drives the scene + black curtain reveal |
+| `components/sections/*` | Collection index, Material, Sizes, Range, Contact, Footer |
+| `data/products.json` | Catalogue: frontend fallback **and** API seed source |
+| `server/src` | Express API: `GET /api/products`, `GET /api/products/:slug`, `POST /api/enquiries` |
 
-To learn more about Next.js, take a look at the following resources:
+## Hero timeline (scroll progress 0 → 1)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Progress | What happens |
+| --- | --- |
+| 0.00-0.32 | Drain rises out of the floor |
+| 0.30-0.52 | Grate swings open on its hinge |
+| 0.48-0.86 | Camera dives into the channel and down the outlet |
+| 0.72-0.86 | Fade to black |
+| 0.86-1.00 | Black curtain slides down to reveal the intro |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Clicking or tapping the drain plays the whole sequence. If you stop scrolling partway through the dive, it finishes in whichever direction you were scrolling.
 
-## Deploy on Vercel
+## Adding new product lines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`category` and `line` are free-form strings in the Mongo schema. Towel rails, grab bars and so on need no schema change: add documents and a filter label in `lib/products.ts`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Product photos in `public/products/` were cropped from the catalogue posters. Swap in proper studio shots on white when you have them.

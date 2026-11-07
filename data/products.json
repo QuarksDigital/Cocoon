@@ -1,0 +1,224 @@
+[
+  {
+    "slug": "linear-wave",
+    "name": "Linear Drain",
+    "variant": "Wave",
+    "category": "linear",
+    "image": "/products/linear-wave.jpg",
+    "summary": "Wave-pattern grate for walk-in showers and wet rooms. Our signature design.",
+    "sizes": [
+      "12\"",
+      "18\"",
+      "24\"",
+      "32\"",
+      "36\""
+    ],
+    "material": "SS 304",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "slug": "linear-slot",
+    "name": "Linear Drain",
+    "variant": "Slot",
+    "category": "linear",
+    "image": "/products/linear-slot.jpg",
+    "summary": "Straight parallel slots for fast drainage in showers and wet areas.",
+    "sizes": [
+      "12\"",
+      "18\"",
+      "24\"",
+      "32\"",
+      "36\""
+    ],
+    "material": "SS 304",
+    "order": 2
+  },
+  {
+    "slug": "linear-plain",
+    "name": "Linear Drain",
+    "variant": "Plain",
+    "category": "linear",
+    "image": "/products/linear-plain.jpg",
+    "summary": "Plain cover for a minimal look. Sits flush with the floor.",
+    "sizes": [
+      "12\"",
+      "18\"",
+      "24\"",
+      "32\"",
+      "36\""
+    ],
+    "material": "SS 304",
+    "order": 3
+  },
+  {
+    "slug": "linear-plain-slim",
+    "name": "Linear Drain",
+    "variant": "Plain Slim",
+    "category": "linear",
+    "image": "/products/linear-plain-slim.jpg",
+    "summary": "Narrower plain channel for tight spaces and shower thresholds.",
+    "sizes": [
+      "12\"",
+      "18\"",
+      "24\"",
+      "32\""
+    ],
+    "material": "SS 304",
+    "order": 4
+  },
+  {
+    "slug": "square-compass",
+    "name": "Square Drain",
+    "variant": "Compass",
+    "category": "square",
+    "image": "/products/square-compass.jpg",
+    "summary": "Square drain with a laser-cut compass pattern.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 5
+  },
+  {
+    "slug": "raised-compass",
+    "name": "Raised Square Drain",
+    "variant": "Compass",
+    "category": "square",
+    "image": "/products/raised-compass.jpg",
+    "summary": "Compass pattern on a raised body, for deeper floor beds.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 6
+  },
+  {
+    "slug": "square-modern",
+    "name": "Square Drain",
+    "variant": "Modern",
+    "category": "square",
+    "image": "/products/square-modern.jpg",
+    "summary": "Square drain with a star pattern inside a round inset.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 7
+  },
+  {
+    "slug": "square-lotus",
+    "name": "Square Drain",
+    "variant": "Lotus",
+    "category": "square",
+    "image": "/products/square-lotus.jpg",
+    "summary": "Petal-cut pattern around a central outlet. Mirror polished.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 8
+  },
+  {
+    "slug": "square-grid",
+    "name": "Square Drain",
+    "variant": "Grid",
+    "category": "square",
+    "image": "/products/square-grid.jpg",
+    "summary": "Square drain with an even grid of square holes.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 9
+  },
+  {
+    "slug": "square-longslot",
+    "name": "Square Drain",
+    "variant": "Long Slot",
+    "category": "square",
+    "image": "/products/square-longslot.jpg",
+    "summary": "Heavy square body with long slots for high water flow.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 10
+  },
+  {
+    "slug": "square-neat",
+    "name": "Square Drain",
+    "variant": "Neat",
+    "category": "square",
+    "image": "/products/square-neat.jpg",
+    "summary": "Solid cover with a hidden gap around the edge. No visible grate.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 11
+  },
+  {
+    "slug": "square-flush",
+    "name": "Square Flush Drain",
+    "variant": "Floor Trap",
+    "category": "square",
+    "image": "/products/square-flush.jpg",
+    "summary": "Tile-insert floor trap that sits flush with the floor finish.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 6\""
+    ],
+    "material": "SS 304",
+    "order": 12
+  },
+  {
+    "slug": "round-classic",
+    "name": "Round Drain",
+    "variant": "Classic",
+    "category": "round",
+    "image": "/products/round-classic.jpg",
+    "summary": "Round drain with curved slots in a polished frame.",
+    "sizes": [
+      "4\"",
+      "5\"",
+      "6\""
+    ],
+    "material": "SS 304",
+    "order": 13
+  },
+  {
+    "slug": "rooftop-box",
+    "name": "Rooftop Drain",
+    "variant": "Box Type",
+    "category": "rooftop",
+    "image": "/products/rooftop-box.jpg",
+    "photo": true,
+    "summary": "3 mm thick hinged box drain for terraces, balconies and rooftops.",
+    "sizes": [
+      "4\" × 4\"",
+      "5\" × 5\"",
+      "6\" × 4\"",
+      "6\" × 6\"",
+      "8\" × 6\"",
+      "8\" × 8\""
+    ],
+    "material": "SS 304 · 3 mm",
+    "order": 14
+  }
+]
